@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stopwatch</title>
+  <link rel="stylesheet" href="../style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+  
+  <header>
+    <nav class="obj-width">
+      <img src="../logo.png" alt="logo" class="logo">
+      <ul>
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="#">RUNNING</a></li>
+        <li><a href="#">WARMUP</a></li>
+        <li><a href="#">PRANAYAMA</a></li>
+        <li><a href="../Meditation/meditate.html">MEDITATION</a></li>
+        <li><a href="#">EXERCISE</a></li>
+      </ul>
+      <i class='bx bx-menu' id="bar"></i>
+    </nav>
+  </header>
+
+
+  <h1>Stopwatch</h1>
+
+  <div class="stopwatch">
+    <marquee behavior="" direction="right">    
+      <img src="https://i.gifer.com/X5Nj.gif" alt="" style="height: 50px;">
+    </marquee>
+
+  <div class="timerfunction">00:00:00:00</div>
+
+  <div class="buttons">
+    <button class="start-timer" onclick="start()">Start</button>
+    <button class="pause-timer" onclick="pause()">Pause</button>
+    <button class="reset-timer" onclick="reset()">Reset</button>
+    <button class="restart-timer" onclick="restart()">Restart</button>
+    <button class="lap" onclick="lap()">Lap</button>
+    <button class="clear-lap" onclick="resetLap()">Clear</button>
+  </div>
+
+    <div class="laps"></div>
+
+</div>
+
+<script src="../script.js"></script>
+</body>
+</html>
